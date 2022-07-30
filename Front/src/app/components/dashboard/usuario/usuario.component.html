@@ -1,0 +1,27 @@
+<div class="flex justify-start">
+    <div class="">
+        <div class="text-lg font-bold pl-5 pt-5">Usuarios</div>
+    </div>
+</div>
+
+<div class="p-5">
+    <table class="table-fixed border-collapse shadow-md w-full">
+        <thead>
+            <tr class="border h-12">
+                <th class="w-2/6 text-sm text-left pl-5 truncate">Nombre</th>
+                <th class="w-2/6 text-sm text-left truncate">Email</th>
+                <th class="w-2/6 text-sm text-left truncate">Perfil</th>
+            </tr>
+        </thead>
+        <tbody class="">
+            <tr class="border h-12" *ngFor="let user of users">
+                <td class="pl-5 text-sm">{{user.name}}</td>
+                <td class="text-sm">{{user.email}}</td>
+                <td class="text-sm">{{user.profile}}</td>
+
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
